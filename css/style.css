@@ -207,7 +207,29 @@ P{
 }
 /*index.html*/
 /*clases.html*/
+.clases{
+    display: grid;
+    grid-template-areas: "encabezado          encabezado          encabezado"
+                         "titulo              titulo              titulo"
+                         "texto__experiencia  texto__experiencia  texto__experiencia"
+                         "clase__imagen       clase__imagen       clase__imagen"
+                         "texto__contacto     texto__contacto     texto__contacto"
+                         "subtitulo__clases   subtitulo__clases   subtitulo__clases"
+                         "texto__clases       texto__clases       texto__clases"
+                         "clases__videos      clases__videos      clases__videos"
+                         "pieDePagina         pieDePagina         pieDePagina";
+}
+.texto__experiencia{
+    grid-area: texto__experiencia;
+}
+.subtitulo__clases{
+    grid-area: subtitulo__clases;
+}
+.texto__clases{
+    grid-area: texto__clases;
+}
 .clase__imagen{
+    grid-area: clase__imagen;
     background-image: url("../images/tablas.jpg");
     min-height: 375px;
     background-attachment: fixed;
@@ -216,6 +238,7 @@ P{
     background-size: cover;
 }
 .texto__contacto{
+    grid-area: texto__contacto;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -224,6 +247,7 @@ P{
     margin-top: 20px;
 }
 .clases__videos{
+    grid-area: clases__videos;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -237,6 +261,15 @@ P{
 }
 /*clases.html*/
 /*contacto.html*/
+.contacto{
+    display: grid;
+    grid-template-areas: "encabezado          encabezado          encabezado"
+                         "titulo              titulo              titulo"
+                         "introduccion        introduccion        introduccion"
+                         "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
+                         "textointroduccion   textointroduccion   textointroduccion"
+                         "pieDePagina         pieDePagina         pieDePagina";
+}
 .contenido__contacto{
     display: flex;
     justify-content: space-between;
@@ -259,6 +292,15 @@ P{
 }
 /*contacto.html*/
 /*historia.html*/
+.historia{
+    display: grid;
+    grid-template-areas: "encabezado          encabezado          encabezado"
+                         "titulo              titulo              titulo"
+                         "introduccion        introduccion        introduccion"
+                         "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
+                         "textointroduccion   textointroduccion   textointroduccion"
+                         "pieDePagina         pieDePagina         pieDePagina";
+}
 .subtitulo__historia{
     text-align: justify;
     font-size: 30px;
@@ -294,6 +336,15 @@ P{
   }
 /*historia.html*/
 /*surfpoints.html*/
+.surfpoints{
+    display: grid;
+    grid-template-areas: "encabezado          encabezado          encabezado"
+                         "titulo              titulo              titulo"
+                         "introduccion        introduccion        introduccion"
+                         "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
+                         "textointroduccion   textointroduccion   textointroduccion"
+                         "pieDePagina         pieDePagina         pieDePagina";
+}
 .tabla__lugares{
     display: inline-block;
     width: 100%;
@@ -351,6 +402,15 @@ td{
 }
 /*surfpoints.html*/
 /*surfshop*/
+.surfshop{
+    display: grid;
+    grid-template-areas: "encabezado          encabezado          encabezado"
+                         "titulo              titulo              titulo"
+                         "introduccion        introduccion        introduccion"
+                         "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
+                         "textointroduccion   textointroduccion   textointroduccion"
+                         "pieDePagina         pieDePagina         pieDePagina";
+}
 .contenido__surfshop{
     display: flex;
     flex-direction: row;
