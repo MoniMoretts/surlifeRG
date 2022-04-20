@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+/*fondo de la pagina*/
+.fondo__pagina{
+    background-color: #053840;
+}
+/*fondo de la pagina*/
+/*header encabezado*/
+.encabezado{
+    grid-area: encabezado;
+    position: sticky;
+    top:0px;
+    right:0px;
+    padding-top:0px;
+    padding-bottom:20px;
+    opacity: 90%;
+    background-color: #ed532d;
+    height:40px;
+}
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+    font-size: 40px;
+    background-color: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.encabezado__logo{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: transform 0.75s;
+}
+.encabezado__logo:hover{
+    transform: scale(1.10);
+
+}
+.listaPrincipal{
+    list-style: none;
+    font-size: 0;
+    display:flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40px;
+    top: 0px;
+    right:0px;
+    height: 100%;
+}
+.barra__titulos{
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+    position:relative;
+    padding-top:15px;
+    font-size: 20px;
+    text-align:center;
+    border-style: none;
+    color:white;
+    transition: all 0.75s;
+}
+.barra__titulos:hover{
+    transform: scale(1.25);
+}
+.barra__carrito{
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+    position:relative;
+    padding-top:15px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align:center;
+    border-style: none;
+    color:white;
+    transition: all 0.75s;
+}
+.barra__carrito:hover{
+    transform: scale(1.25);
+}
+.carrito__lista{
+    display:none;
+    position: absolute;
+    margin-top: 0;
+    margin-right:0 ;
+    width:100px;
+    height: 100%;
+}
+.carrito__lista:hover{
+    display: block;
+}
+/*header encabezado*/
+/*footer pie de pagina*/
+.pieDePagina{
+    position: relative;
+    bottom: 0px;
+    left:0px;
+    opacity: 90%;
+    background-color: #ed532d;
+    height: 100%;
+    grid-area: pieDePagina;
+}
+.pieDePagina__contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom:0px;
+}
+.contacto__leyenda{
+    display: inline-block;
+    position: relative;
+    left:35%;
+    width: 400px;
+    text-align: center;
+    background-color: none;
+    color:white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 0;
+
+}
+.contacto__logo{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    text-align: center;
+    left: 35%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    transition: all 0.75s;
+}
+.contacto__logo:hover{
+    transform: scale(1.10);
+}
+.pieDePagina__redes{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+    bottom: 10px;
+}
+.redes__logo{
+    margin-top: 10px;
+    transition: all 0.75s;
+}
+.redes__logo:hover{
+    transform: scale(1.10);
+}
+/*footer pie de pagina*/
+/*Aplica en todos los html*/
+h1{
+    text-align: center;
+    font-size: 40px;
+    background-color: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+h2{
+    font-size: 30px;
+    background-color: none;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+P{
+    text-align: justify;
+    font-size: 25px;
+    text-size-adjust: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.texto__link{
+    text-decoration: underline;
+}
+/*Aplica en todos los html*/
+/*index.html*/
+.imagen__primerPlano{
+    background-image: url("../images/primerPlanoTabla.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: imagen__primerPlano;
+}
+.index{
+    display: grid;
+    grid-template-areas: "encabezado          encabezado          encabezado"
+                         "titulo              titulo              titulo"
+                         "introduccion        introduccion        introduccion"
+                         "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
+                         "textointroduccion   textointroduccion   textointroduccion"
+                         "pieDePagina         pieDePagina         pieDePagina";
+}
+.introduccion{
+    grid-area: introduccion;
+}
+.textointroduccion{
+    grid-area: textointroduccion;
+}
+/*index.html*/
+/*clases.html*/
+.clase__imagen{
+    background-image: url("../images/tablas.jpg");
+    min-height: 375px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.texto__contacto{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    left: 40%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.clases__videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+.videos__experiencia{
+    display: inline-block;
+
+}
+/*clases.html*/
+/*contacto.html*/
+.contenido__contacto{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.contacto__formulario{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width:75%;
+    height: 600px;
+}
+.formulario__info{
+    display: flex;
+    flex-direction: column;
+
+}
+/*contacto.html*/
+/*historia.html*/
+.subtitulo__historia{
+    text-align: justify;
+    font-size: 30px;
+    background-color: none;
+    color:white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.imagen__evolucion {
+    background-image: url("../images/bannerPlaya.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen__historia1 {
+    background-image: url("../images/ola.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .imagen__historia2 {
+    background-image: url("../images/surfista.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/*historia.html*/
+/*surfpoints.html*/
+.tabla__lugares{
+    display: inline-block;
+    width: 100%;
+    top: 10px;
+    bottom: 10px;
+    text-align: justify;
+}
+.lugares__titulo{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.imagen__playa1 {
+    background-image: url("../images/playa1.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen__playa2 {
+    background-image: url("../images/playa2.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen__playa3 {
+    background-image: url("../images/playa3.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen__playa4 {
+    background-image: url("../images/playa4.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen__playa5 {
+    background-image: url("../images/playa5.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+td{
+    font-size: 25px;
+}
+/*surfpoints.html*/
+/*surfshop*/
+.contenido__surfshop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width:100%;
+    height:500px
+}
+.surfshop__imagen{
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+    width: 75%;
+    height: auto;
+}
+.surfshop__formulario{
+    margin-right: 20px;
+    width: 25%;
+}
+.formulario__titulo{
+    display: inline-block;
+    left: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.formulario__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    align-items: left;
+    top:5px;
+    bottom:5px;
+    font-size: 20px;
+}
+.formulario__botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    top: 10px;
+    bottom:10px;
+}
+.botones{
+    margin-top:10px;
+    background-color:#053840;
+    width: 25%;
+}
+.imagen__proximamente{
+    margin-top: 50px;
+}
+/*surfshop*/

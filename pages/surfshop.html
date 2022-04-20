@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<HTML lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>surfshop</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="fondo__pagina">
+        <!--Aca comienza el header-->
+        <header class="encabezado">
+            <a id="encabezado__logo" href="../index.html"><img src="../images/surflifeLogo.webp" width="105">
+            </a>
+            <nav id="barraNavegacion">
+                <ul id="listaPrincipal">
+                    <li class="barra__titulos"><a href="../index.html">Home</a></li>
+                    <li class="barra__titulos"><a href="historia.html">Historia</a></li>
+                    <li class="barra__titulos"><a href="surfpoints.html">Surfpoints</a></li>
+                    <li class="barra__titulos"><a href="surfshop.html">Surfshop</a></li>
+                    <li class="barra__titulos"><a href="clases.html">Experiencia</a></li>
+                    <li class="barra__titulos"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Aca termina el header-->
+        <h1>Surfshop</h1>
+        <main class="contenido__surfshop">
+        <section class="surfshop__imagen">
+            <article class="imagen__proximamente" ><img src="../images/proximamente.png" alt="Proximamente" title="Proximamente" ></article>
+        </section>
+        <!--Aca empieza el aside-->
+        <aside class="surfshop__formulario">
+            <h2 class="formulario__titulo">Dudas o consultas</h2>
+            <form action="">
+                <fieldset>
+                     <legend class="formulario__titulo">Formulario de contacto</legend>
+                     <div class="formulario__data">
+                     <label for="nombre">Nombre y Apellido</label>
+                     <input type="text" name="nombre">
+                     <label for="telefono">Teléfono</label>
+                     <input type="number" name="telefono">
+                     <label for="email">Email</label>
+                     <input type="email" name="email">
+                     <label for="">Cuando prefieres ser contactado?</label>
+                     <input type="checkbox" value="m" name="manana">Mañana
+                     <input type="checkbox" value="t" name="tarde">Tarde
+                     <label for="">Comentarios</label>
+                     <textarea name="comentarios" placeholder="Deje su mensaje aquí"></textarea>
+                     </div>
+                     <div class="formulario__botones">
+                     <input class="botones" type="submit" value="Enviar">
+                     <input class="botones" type="reset" value="Limpiar">
+                    </div>
+                 </fieldset>
+            </form>
+        </aside>
+        </main>
+         <!--Aca empieza el footer-->
+         <footer class="pieDePagina">
+            <div class="pieDePagina__contacto">
+                <h2 class="contacto__leyenda"><a class="texto__link" href="clases.html">Surflife surf school</a>
+                    <h3 class="contacto__leyenda">Calle Falsa, 123</h3>
+                    <h3 class="contacto__leyenda">+54 11 1234-5678</h3>
+                    <h3 class="contacto__leyenda">Mavericks California</h3>
+                </h2>
+                <div  class="contacto__logo">
+                <a href="../index.html"><img src="../images/surflifeLogoFooter.webp" width="115">
+                </div>
+            </div>
+            <div class="pieDePagina__redes">
+                <a class="redes__logo" href="https://www.instagram.com/?hl=es"><img src="../images/instagram.png" title="instagram" width="40px"></a>
+                <a class="redes__logo" href="https://www.whatsapp.com/?lang=es"><img src="../images/whatsapp.png" title="whatsapp" width="40px"></a>
+                <a class="redes__logo" href="https://es-la.facebook.com/"><img src="../images/facebook.png" title="facebook" width="40px"></a>
+            </div>
+        </footer>
+    <!--fin del footer-->
+        </main>
+    </body>
+</html>
