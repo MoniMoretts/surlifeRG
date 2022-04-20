@@ -3,8 +3,8 @@
     text-decoration: none;
     color: white;
     font-family: 'Dosis', sans-serif;
+    overflow-x: clip;
 }
-
 /*fondo de la pagina*/
 .fondo__pagina{
     background-color: #053840;
@@ -112,10 +112,10 @@
     margin-bottom:0px;
 }
 .contacto__leyenda{
-    display: inline-block;
-    position: relative;
-    left:35%;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
     text-align: center;
     background-color: none;
     color:white;
@@ -125,11 +125,11 @@
 
 }
 .contacto__logo{
-    display: inline-block;
-    position: relative;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
     text-align: center;
-    left: 35%;
     margin-bottom: 10px;
     margin-top: 5px;
     transition: all 0.75s;
@@ -190,14 +190,30 @@ P{
     background-size: cover;
     grid-area: imagen__primerPlano;
 }
-.index{
-    display: grid;
-    grid-template-areas: "encabezado          encabezado          encabezado"
-                         "titulo              titulo              titulo"
-                         "introduccion        introduccion        introduccion"
-                         "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
-                         "textointroduccion   textointroduccion   textointroduccion"
-                         "pieDePagina         pieDePagina         pieDePagina";
+@media screen and (min-width:768px) {
+    .index{
+        display: grid;
+        grid-template-areas: "encabezado          encabezado          encabezado"
+                             "titulo              titulo              titulo"
+                             "introduccion        introduccion        introduccion"
+                             "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
+                             "textointroduccion   textointroduccion   textointroduccion"
+                             "pieDePagina         pieDePagina         pieDePagina";
+        align-content: space-between;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .index{
+        display: grid;
+    grid-template-areas: "encabezado          "
+                         "titulo              "
+                         "introduccion        "
+                         "imagen__primerPlano "
+                         "textointroduccion   "
+                         "pieDePagina         ";
+    height: max-content;
+    }
 }
 .introduccion{
     grid-area: introduccion;
@@ -207,6 +223,8 @@ P{
 }
 /*index.html*/
 /*clases.html*/
+
+
 .clases{
     display: grid;
     grid-template-areas: "encabezado          encabezado          encabezado"
@@ -216,8 +234,17 @@ P{
                          "texto__contacto     texto__contacto     texto__contacto"
                          "subtitulo__clases   subtitulo__clases   subtitulo__clases"
                          "texto__clases       texto__clases       texto__clases"
-                         "clases__videos      clases__videos      clases__videos"
+                         "videos__experiencia1 videos__experiencia2 videos__experiencia3"
                          "pieDePagina         pieDePagina         pieDePagina";
+     align-content: space-between;
+    }
+    .clases__videos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 300px;
+        width: 100%;
 }
 .texto__experiencia{
     grid-area: texto__experiencia;
@@ -246,18 +273,15 @@ P{
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.clases__videos{
-    grid-area: clases__videos;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 300px;
-    width: 100%;
-}
-.videos__experiencia{
-    display: inline-block;
+.videos__experiencia1{
+    grid-area: videos__experiencia1;
 
+}
+.videos__experiencia2{
+    grid-area: videos__experiencia2
+}
+.videos__experiencia3{
+    grid-area: videos__experiencia3;
 }
 /*clases.html*/
 /*contacto.html*/
@@ -467,3 +491,28 @@ td{
     margin-top: 50px;
 }
 /*surfshop*/
+@media (max-width:768px){
+    .clases{
+        display: grid;
+        grid-template-areas: "encabezado       "
+                            "titulo            "
+                            "texto__experiencia"  
+                            "clase__imagen     "
+                            "texto__contacto"     
+                            "subtitulo__clases"
+                            "texto__clases"
+                            "videos__experiencia1"
+                            "videos__experiencia2"
+                            "videos__experiencia3"
+                            "pieDePagina";
+        align-content: space-between;
+    }
+    .clases__videos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}
