@@ -3,7 +3,7 @@
     text-decoration: none;
     color: white;
     font-family: 'Dosis', sans-serif;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 /*fondo de la pagina*/
 .fondo__pagina{
@@ -21,6 +21,7 @@
     opacity: 90%;
     background-color: #ed532d;
     height:40px;
+    width: 100%;
 }
 .titulo{
     grid-area: titulo;
@@ -35,6 +36,7 @@
     margin-top: 10px;
     margin-left: 10px;
     transition: transform 0.75s;
+    width: 25%;
 }
 .encabezado__logo:hover{
     transform: scale(1.10);
@@ -51,10 +53,11 @@
     top: 0px;
     right:0px;
     height: 100%;
+    width: 75%;
 }
 .barra__titulos{
     display: inline-block;
-    width: 150px;
+    width: 75%;
     height: 100%;
     position:relative;
     padding-top:15px;
@@ -66,33 +69,6 @@
 }
 .barra__titulos:hover{
     transform: scale(1.25);
-}
-.barra__carrito{
-    display: inline-block;
-    width: 40px;
-    height: 100%;
-    position:relative;
-    padding-top:15px;
-    padding-right: 20px;
-    font-size: 20px;
-    text-align:center;
-    border-style: none;
-    color:white;
-    transition: all 0.75s;
-}
-.barra__carrito:hover{
-    transform: scale(1.25);
-}
-.carrito__lista{
-    display:none;
-    position: absolute;
-    margin-top: 0;
-    margin-right:0 ;
-    width:100px;
-    height: 100%;
-}
-.carrito__lista:hover{
-    display: block;
 }
 /*header encabezado*/
 /*footer pie de pagina*/
@@ -190,30 +166,15 @@ P{
     background-size: cover;
     grid-area: imagen__primerPlano;
 }
-@media screen and (min-width:768px) {
-    .index{
-        display: grid;
-        grid-template-areas: "encabezado          encabezado          encabezado"
-                             "titulo              titulo              titulo"
-                             "introduccion        introduccion        introduccion"
-                             "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
-                             "textointroduccion   textointroduccion   textointroduccion"
-                             "pieDePagina         pieDePagina         pieDePagina";
-        align-content: space-between;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .index{
-        display: grid;
-    grid-template-areas: "encabezado          "
-                         "titulo              "
-                         "introduccion        "
-                         "imagen__primerPlano "
-                         "textointroduccion   "
-                         "pieDePagina         ";
-    height: max-content;
-    }
+.index{
+    display: grid;
+    grid-template-areas: "encabezado          encabezado          encabezado"
+                         "titulo              titulo              titulo"
+                         "introduccion        introduccion        introduccion"
+                         "imagen__primerPlano imagen__primerPlano imagen__primerPlano"
+                         "textointroduccion   textointroduccion   textointroduccion"
+                         "pieDePagina         pieDePagina         pieDePagina";
+    align-content: space-between;
 }
 .introduccion{
     grid-area: introduccion;
@@ -234,11 +195,12 @@ P{
                          "texto__contacto     texto__contacto     texto__contacto"
                          "subtitulo__clases   subtitulo__clases   subtitulo__clases"
                          "texto__clases       texto__clases       texto__clases"
-                         "videos__experiencia1 videos__experiencia2 videos__experiencia3"
+                         "videos__experiencia videos__experiencia videos__experiencia"
                          "pieDePagina         pieDePagina         pieDePagina";
      align-content: space-between;
     }
     .clases__videos{
+        grid-area: videos__experiencia;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -272,16 +234,6 @@ P{
     left: 40%;
     margin-bottom: 20px;
     margin-top: 20px;
-}
-.videos__experiencia1{
-    grid-area: videos__experiencia1;
-
-}
-.videos__experiencia2{
-    grid-area: videos__experiencia2
-}
-.videos__experiencia3{
-    grid-area: videos__experiencia3;
 }
 /*clases.html*/
 /*contacto.html*/
@@ -492,6 +444,33 @@ td{
 }
 /*surfshop*/
 @media (max-width:768px){
+    .encabezado{
+        position: relative;
+        height: 350px;
+    }
+    .listaPrincipal{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+    .encabezado__logo{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .index{
+        display: grid;
+    grid-template-areas: "encabezado          "
+                         "titulo              "
+                         "introduccion        "
+                         "imagen__primerPlano "
+                         "textointroduccion   "
+                         "pieDePagina         ";
+    height: max-content;
+    }
     .clases{
         display: grid;
         grid-template-areas: "encabezado       "
@@ -501,9 +480,9 @@ td{
                             "texto__contacto"     
                             "subtitulo__clases"
                             "texto__clases"
-                            "videos__experiencia1"
-                            "videos__experiencia2"
-                            "videos__experiencia3"
+                            "videos__experiencia"
+                            "videos__experiencia"
+                            "videos__experiencia"
                             "pieDePagina";
         align-content: space-between;
     }
