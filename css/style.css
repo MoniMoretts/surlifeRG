@@ -36,12 +36,15 @@
     display: inline-block;
     margin-top: 10px;
     margin-left: 10px;
-    transition: transform 0.75s;
     width: 25%;
 }
-.encabezado__logo:hover{
+.logo{
+    transition: transform 0.75s;
+    padding-left:5px;
+    padding-top: 3px;
+}
+.logo:hover{
     transform: scale(1.10);
-
 }
 .listaPrincipal{
     list-style: none;
@@ -66,11 +69,16 @@
     font-size: 20px;
     text-align:center;
     border-style: none;
-    color:white;
     transition: all 0.75s;
 }
 .barra__titulos:hover{
     transform: scale(1.25);
+}
+.barra__palabra{
+    transition: all 0.75s;
+}
+.barra__palabra:hover{
+    color: #053840;
 }
 /*header encabezado*/
 /*footer pie de pagina*/
@@ -119,15 +127,33 @@
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-items: center;
     right: 20px;
     bottom: 10px;
+    overflow-y: hidden;
 }
 .redes__logo{
     margin-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    border-radius: 5px;
     transition: all 0.75s;
+    width: 100%;
 }
 .redes__logo:hover{
     transform: scale(1.10);
+}
+.texto__link{
+    transition: all 0.75;
+}
+.texto__link:hover{
+    color: #ed532d;
+}
+.texto__link2{
+    transition: all 0.75;
+}
+.texto__link2:hover{
+    color: #053840;
 }
 /*footer pie de pagina*/
 /*Aplica en todos los html*/
@@ -148,6 +174,9 @@ P{
     padding-right: 20px;
 }
 .texto__link{
+    text-decoration: underline;
+}
+.texto__link2{
     text-decoration: underline;
 }
 /*Aplica en todos los html*/
