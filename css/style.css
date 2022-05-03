@@ -23,16 +23,18 @@
     background-color: #ed532d;
     height:40px;
     width: 100%;
+    color: white;
 }
 .barraNavegacion{
     background-color: #ed532d;
+    color: white;
 }
 .listaNav{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 .titulo{
@@ -43,6 +45,7 @@
     background-color: none;
     margin-bottom: 20px;
     margin-top: 20px;
+    color: white;
 }
 .encabezado__logo{
     transition: transform 0.75s;
@@ -586,6 +589,9 @@ td{
     .encabezado{
         position: relative;
         height: 400px;
+    }
+    .logo2{
+        display: none;
     }
     .listaPrincipal{
         display:flex;
