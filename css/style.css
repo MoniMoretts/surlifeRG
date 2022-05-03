@@ -3,7 +3,7 @@
     text-decoration: none;
     color: white;
     font-family: 'Dosis', sans-serif;
-    overflow-x: hidden;
+
 }
 /*fondo de la pagina*/
 .fondo__pagina{
@@ -24,7 +24,19 @@
     height:40px;
     width: 100%;
 }
+.barraNavegacion{
+    background-color: #ed532d;
+}
+.listaNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+}
 .titulo{
+    overflow-y: hidden;
     grid-area: titulo;
     text-align: center;
     font-size: 40px;
@@ -33,11 +45,7 @@
     margin-top: 20px;
 }
 .encabezado__logo{
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
     transition: transform 0.75s;
-    width: 25%;
 }
 .encabezado__logo:hover{
     transform: scale(1.10);
@@ -58,6 +66,7 @@
     overflow-y: hidden;
 }
 .barra__titulos{
+    overflow-y: hidden;
     display: inline-block;
     width: 75%;
     height: 100%;
@@ -100,6 +109,7 @@
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 0;
+    overflow-y: hidden;
 
 }
 .contacto__logo{
@@ -149,6 +159,7 @@ P{
 }
 .texto__link{
     text-decoration: underline;
+    overflow-y: hidden;
 }
 /*Aplica en todos los html*/
 /*index.html*/
@@ -163,7 +174,7 @@ P{
 }
 .index{
     display: grid;
-    grid-template-areas: "encabezado          encabezado          encabezado"
+    grid-template-areas: "encabezadoB          encabezadoB          encabezadoB"
                          "titulo              titulo              titulo"
                          "introduccion        introduccion        introduccion"
                          "imagen__primerPlano imagen__primerPlano imagen__primerPlano"

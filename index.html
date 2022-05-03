@@ -4,27 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>surflife</title>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
-        <main class="fondo__pagina">
-            <div class="index">
+        <main class="fondo__pagina ">
         <!--Aca comienza el header-->
-        <header class="encabezado">
-            <a class="encabezado__logo" href="index.html"><img src="images/surflifeLogo.webp" width="105">
-            </a>
-            <nav class="barraNavegacion">
-                <ul class="listaPrincipal">
-                    <li class="barra__titulos"><a href="index.html">Home</a></li>
-                    <li class="barra__titulos"><a href="pages/historia.html">Historia</a></li>
-                    <li class="barra__titulos"><a href="pages/surfpoints.html">Surfpoints</a></li>
-                    <li class="barra__titulos"><a href="pages/surfshop.html">Surfshop</a></li>
-                    <li class="barra__titulos"><a href="pages/clases.html">Experiencia</a></li>
-                    <li class="barra__titulos"><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
+        <header class="encabezadoB row">
+            <nav class="navbar navbar-expand-lg navbar-light barraNavegacion">
+            <div class="container-fluid">
+                    <a class="encabezado__logo navbar-brand" href="index.html"><img src="images/surflifeLogo.webp" width="105"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="listaNav navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/historia.html">Historia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/clases.html">Experiencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/surfpoints.html">Surfpoints</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/surfshop.html">Surfshop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
             </nav>
         </header>
         <!--Aca termina el header-->
@@ -51,7 +70,6 @@
             </div>
         </footer>
     <!--fin del footer-->
-        </div>
         </main>
     </body>
 </html>
