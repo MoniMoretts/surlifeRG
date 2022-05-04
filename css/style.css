@@ -3,14 +3,22 @@
     text-decoration: none;
     color: white;
     font-family: 'Dosis', sans-serif;
-
 }
 /*fondo de la pagina*/
 .fondo__pagina{
-    background-color: #053840;
+    background-color: #007c61c5;
 }
 /*fondo de la pagina*/
 /*header encabezado*/
+#titulo__Nav{
+    color: white;
+    transition: 0.50s;
+}
+#titulo__Nav:hover{
+    color: #00b890;
+    text-decoration: underline;
+    transform: scale(1.10);
+}
 .encabezado{
     overflow-y: hidden;
     grid-area: encabezado;
@@ -20,14 +28,14 @@
     padding-top:0px;
     padding-bottom:20px;
     opacity: 90%;
-    background-color: #ed532d;
     height:40px;
     width: 100%;
     color: white;
 }
 .barraNavegacion{
-    background-color: #ed532d;
+    background-color: #fd4830;
     color: white;
+    position: sticky;
 }
 .listaNav{
     display: flex;
@@ -90,8 +98,7 @@
     position: relative;
     bottom: 0px;
     left:0px;
-    opacity: 90%;
-    background-color: #ed532d;
+    background-color: #fd4830;
     height: 100%;
     grid-area: pieDePagina;
 }
@@ -163,6 +170,13 @@ P{
 .texto__link{
     text-decoration: underline;
     overflow-y: hidden;
+    color: white;
+}
+.texto__link:hover{
+    color: #fd4830;
+}
+#link__footer:hover{
+    color: #00b890;
 }
 /*Aplica en todos los html*/
 /*index.html*/
@@ -243,6 +257,9 @@ P{
     left: 40%;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+.videos{
+    height: 600px;
 }
 /*clases.html*/
 /*contacto.html*/
@@ -578,20 +595,22 @@ td{
 }
 .botones{
     margin-top:10px;
-    background-color:#053840;
+    background-color:#00b890;
     width: 25%;
 }
 .imagen__proximamente{
     margin-top: 50px;
 }
 /*surfshop*/
+@media (max-width:991px){
+    .logo2{
+        display: none;
+    }
+}
 @media (max-width:768px){
     .encabezado{
         position: relative;
         height: 400px;
-    }
-    .logo2{
-        display: none;
     }
     .listaPrincipal{
         display:flex;

@@ -15,39 +15,39 @@
         <main class="fondo__pagina">
             <div class="">
         <!--Aca comienza el header-->
-        <header class="encabezadoB row">
-            <nav class="navbar navbar-expand-lg navbar-light barraNavegacion">
-            <div class="container-fluid">
-                    <a class="encabezado__logo navbar-brand" href="index.html"><img src="../images/surflifeLogo.webp" width="105"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="listaNav navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="historia.html">Historia</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="clases.html">Experiencia</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="surfpoints.html">Surfpoints</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="surfshop.html">Surfshop</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-                </div>
-                <a class="encabezado__logo navbar-brand" href="index.html"><img src="../images/surflifeLogo.webp" width="105"></a>
-            </div>
-            </nav>
-        </header>
+        <header class=" row ">
+          <nav class="navbar navbar-expand-lg barraNavegacion">
+          <div class="container-fluid">
+                  <a class="encabezado__logo navbar-brand" href="../index.html"><img src="../images/surflifeLogo.webp" width="105"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="listaNav navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a id="titulo__Nav" class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="titulo__Nav" class="nav-link active" aria-current="page" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="titulo__Nav" class="nav-link active" aria-current="page" href="clases.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="titulo__Nav" class="nav-link active" aria-current="page" href="surfpoints.html">Surfpoints</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="titulo__Nav" class="nav-link active" aria-current="page" href="surfshop.html">Surfshop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="titulo__Nav" class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
+              <a class="encabezado__logo navbar-brand" href="../index.html"><img class="logo2" src="../images/surflifeLogo.webp" width="105"></a>
+          </div>
+          </nav>
+      </header>
         <!--Aca termina el header-->
         <h1 class="titulo">Experiencia Surflife</h1>
         <p class="texto__experiencia">Animate a formar parte de esta inigualable experiencia junto a los mejores surfistas de la costa oeste. Acompañanos a disfrutar de las increíbles olas que nos regala la costa californiana, sumate a <a class="texto__link" href="contacto.html">Experiencia Surflife</a>, contamos con 4 de los mejores alojamiento surferos donde vas a poder relajarte luego de un excelente día de surf, vas a poder acceder a la zona de spa, sala de entretenimientos y a nuestros mejores bares y restaurantes temáticos. En <a class="texto__link" href="contacto.html">Experiencia Surflife</a> nos encargamos de todo, para que tu unico objetivo sea disfrutar y alcanzar tu mejor desempeño en el agua.</p>
@@ -58,15 +58,38 @@
             Acercate a la escuela ubicada en <a class="texto__link" href="https://www.google.com/maps/place/Mavericks+Beach/@37.4955678,-122.5141966,14z/data=!3m1!4b1!4m5!3m4!1s0x808f724bee999c59:0x81d5f0290fcc0248!8m2!3d37.4955696!4d-122.496687"src="comollegar">Mavericks Beach</a> y comenza a descubrir este increble estilo de vida.
         </p>
         <!--videos similares a los que habria en el sitio-->
-        <section class="clases__videos">
-        <article class="videos__experiencia1"><iframe  src="https://www.youtube.com/embed/NOP8Wq4UYVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></article>
-        <article class="videos__experiencia2"><iframe  src="https://www.youtube.com/embed/PkWjeqAN4cQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></article>
-        <article class="videos__experiencia3"><iframe  src="https://www.youtube.com/embed/QCCPtc5Cicg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></article>
-        </section>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe class="videos d-block w-100"  src="https://www.youtube.com/embed/NOP8Wq4UYVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe class="videos d-block w-100" src="https://www.youtube.com/embed/PkWjeqAN4cQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe class="videos d-block w-100" src="https://www.youtube.com/embed/QCCPtc5Cicg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
          <!--Aca empieza el footer-->
          <footer class="pieDePagina">
             <div class="pieDePagina__contacto">
-                <h2 class="contacto__leyenda"><a class="texto__link" href="clases.html">Surflife surf school</a>
+                <h2 class="contacto__leyenda"><a class="texto__link" id="link__footer" href="clases.html">Surflife surf school</a>
                     <h3 class="contacto__leyenda">Calle Falsa, 123</h3>
                     <h3 class="contacto__leyenda">+54 11 1234-5678</h3>
                     <h3 class="contacto__leyenda">Mavericks California</h3>

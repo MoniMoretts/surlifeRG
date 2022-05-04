@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>surfshop</title>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,23 +13,42 @@
     </head>
     <body>
         <main class="fondo__pagina">
-            <div class="surfshop">
         <!--Aca comienza el header-->
-        <header class="encabezado">
-            <a class="encabezado__logo" href="../index.html"><img src="../images/surflifeLogo.webp" width="105">
-            </a>
-            <nav class="barraNavegacion">
-                <ul class="listaPrincipal">
-                    <li class="barra__titulos"><a href="../index.html">Home</a></li>
-                    <li class="barra__titulos"><a href="historia.html">Historia</a></li>
-                    <li class="barra__titulos"><a href="surfpoints.html">Surfpoints</a></li>
-                    <li class="barra__titulos"><a href="surfshop.html">Surfshop</a></li>
-                    <li class="barra__titulos"><a href="clases.html">Experiencia</a></li>
-                    <li class="barra__titulos"><a href="contacto.html">Contacto</a></li>
-                </ul>
+        <header class=" row ">
+            <nav class="navbar navbar-expand-lg barraNavegacion">
+            <div class="container-fluid">
+                    <a class="encabezado__logo navbar-brand" href="../index.html"><img src="../images/surflifeLogo.webp" width="105"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="listaNav navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a id="titulo__Nav" class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="titulo__Nav" class="nav-link active" aria-current="page" href="historia.html">Historia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="titulo__Nav" class="nav-link active" aria-current="page" href="clases.html">Experiencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="titulo__Nav" class="nav-link active" aria-current="page" href="surfpoints.html">Surfpoints</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="titulo__Nav" class="nav-link active" aria-current="page" href="surfshop.html">Surfshop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="titulo__Nav" class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                </div>
+                <a class="encabezado__logo navbar-brand" href="../index.html"><img class="logo2" src="../images/surflifeLogo.webp" width="105"></a>
+            </div>
             </nav>
         </header>
         <!--Aca termina el header-->
+        <div class="surfshop">
         <h1 class="titulo">Surfshop</h1>
         <main class="contenido__surfshop">
         <section class="surfshop__imagen">
@@ -63,7 +84,7 @@
          <!--Aca empieza el footer-->
          <footer class="pieDePagina">
             <div class="pieDePagina__contacto">
-                <h2 class="contacto__leyenda"><a class="texto__link" href="clases.html">Surflife surf school</a>
+                <h2 class="contacto__leyenda"><a class="texto__link" id="link__footer" href="clases.html">Surflife surf school</a>
                     <h3 class="contacto__leyenda">Calle Falsa, 123</h3>
                     <h3 class="contacto__leyenda">+54 11 1234-5678</h3>
                     <h3 class="contacto__leyenda">Mavericks California</h3>
