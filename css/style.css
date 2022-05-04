@@ -56,14 +56,7 @@
     color: white;
 }
 .encabezado__logo{
-<<<<<<< HEAD
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 25%;
-=======
     transition: transform 0.75s;
->>>>>>> boostrap
 }
 .logo{
     transition: transform 0.75s;
