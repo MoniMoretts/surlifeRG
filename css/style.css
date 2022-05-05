@@ -6,7 +6,9 @@
 }
 /*fondo de la pagina*/
 .fondo__pagina{
-    background-color: #007c61c5;
+    background-color: #57a8b3;
+    width: 100%;
+    overflow-x: hidden;
 }
 /*fondo de la pagina*/
 /*header encabezado*/
@@ -15,27 +17,30 @@
     transition: 0.50s;
 }
 #titulo__Nav:hover{
-    color: #00b890;
+    color: #57a8b3;
     text-decoration: underline;
     transform: scale(1.10);
 }
 .encabezado{
-    overflow-y: hidden;
-    grid-area: encabezado;
-    position: sticky;
-    top:0px;
-    right:0px;
-    padding-top:0px;
-    padding-bottom:20px;
-    opacity: 90%;
-    height:40px;
+    display: block;
     width: 100%;
+    --bs-gutter-x: 0rem;
+    margin-top: 0px;
+}
+.encabezado__chico{
+    display: none;
+    background-color: #fd4830;
+}
+.colorCanvas{
+    background-color: #fd4830;
+}
+#textoCanvas{
     color: white;
+    font-size: 20px;
 }
 .barraNavegacion{
     background-color: #fd4830;
     color: white;
-    position: sticky;
 }
 .listaNav{
     display: flex;
@@ -52,11 +57,15 @@
     font-size: 40px;
     background-color: none;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     color: white;
 }
 .encabezado__logo{
     transition: transform 0.75s;
+    margin-left: 20px;
+}
+.encabezado__logo:hover{
+    transform: scale(1.10);
 }
 .logo{
     transition: transform 0.75s;
@@ -99,7 +108,7 @@
     transition: all 0.75s;
 }
 .barra__palabra:hover{
-    color: #053840;
+    color: #57a8b3;
 }
 /*header encabezado*/
 /*footer pie de pagina*/
@@ -151,7 +160,16 @@
     justify-items: center;
     right: 20px;
     bottom: 10px;
-    overflow-y: hidden;
+    overflow: visible;
+}
+.pieDePagina__music{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    overflow: visible;
+}
+.music{
+    border-radius: 12px;
 }
 .redes__logo{
     margin-top: 10px;
@@ -174,7 +192,7 @@
     transition: all 0.75;
 }
 .texto__link2:hover{
-    color: #053840;
+    color: #57a8b3;
 }
 /*footer pie de pagina*/
 /*Aplica en todos los html*/
@@ -203,7 +221,7 @@ P{
     color: #fd4830;
 }
 #link__footer:hover{
-    color: #00b890;
+    color: #57a8b3;
 }
 .texto__link2{
     text-decoration: underline;
@@ -291,6 +309,7 @@ P{
 .videos{
     height: 600px;
 }
+
 /*clases.html*/
 /*contacto.html*/
 .contacto{
@@ -305,7 +324,7 @@ P{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 550px;
+    height: 650px;
     width: 100%;
 }
 
@@ -317,7 +336,7 @@ P{
     margin-top: 0px;
     margin-bottom: 0px;
     width:70%;
-    height: 100%;
+    height: 97%;
 }
 .formulario__info{
     display: flex;
@@ -561,16 +580,9 @@ td{
     font-size: 25px;
 }
 /*surfpoints.html*/
-/*surfshop*/
-.surfshop{
-    display: grid;
-    grid-template-areas: "encabezado          encabezado          encabezado"
-                         "titulo              titulo              titulo"
-                         "surfshop            surfshop            surfshop"
-                         "pieDePagina         pieDePagina         pieDePagina";
-}
-.contenido__surfshop{
-    grid-area: surfshop;
+/*lifestyle*/
+
+.contenido__lifestyle{
     display: flex;
     flex-direction: row;
     justify-content: space-between center;
@@ -580,53 +592,26 @@ td{
     width:100%;
     height:max-content;
 }
-.surfshop__imagen{
-    grid-area: imgSurfshop;
-    text-align: center;
-    align-items: center;
-    margin-top: 70px;
-    width: 75%;
-    height: 100%;
-    overflow-y: hidden;
-}
-.surfshop__formulario{
-    overflow-y: hidden;
-    grid-area: formSurfshop;
-    margin-right: 20px;
-    width: 25%;
-    height: 100%;
-}
-.formulario__titulo{
-    display: inline-block;
-    left: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-.formulario__data{
+.lifestyle__imagenes{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    text-align: left;
-    align-items: left;
-    top:5px;
-    bottom:5px;
-    font-size: 20px;
-}
-.formulario__botones{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
     align-items: center;
-    top: 10px;
-    bottom:10px;
+    margin-top: 70px;
+    width: 75%;
+    height: 513px;
 }
-.botones{
-    margin-top:10px;
-    background-color:#00b890;
+.lifestyle__contenedor{
+    width: 769px;
+    height: 513px;
+}
+.lifestyle__music{
+    overflow-y: hidden;
+    margin-right: 20px;
+    margin-left: 35px;
+    margin-top: 30px;
     width: 25%;
+    height: 100%;
 }
 .imagen__proximamente{
     margin-top: 50px;
@@ -636,11 +621,46 @@ td{
     .logo2{
         display: none;
     }
+    .encabezado__grande{
+        display: none;
+    }
+    .encabezado__chico{
+        display: flex;
+        position: relative;
+    }
+    .contenido__lifestyle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: auto;
+    }
+    .lifestyle__imagenes{
+        width: 100%;
+        height: 513px;
+        margin: 0px;
+    }
+    .lifestyle__music{
+        width:50%;
+        margin-top: 60px;
+    }
 }
 @media (max-width:768px){
-    .encabezado{
+    
+    .pieDePagina__music{
         position: relative;
-        height: 400px;
+        overflow: visible;
+        width: 100%;
+        left: 0px;
+        padding-top: 20px;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .music{
+        border-radius: 0px;
     }
     .listaPrincipal{
         display:flex;
@@ -706,7 +726,9 @@ td{
         justify-content: space-evenly;
         align-items: center;
         height: 100%;
-        width: 100%;
+        width: 94%;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .contacto__formulario{
         display: inline-block;
@@ -718,24 +740,5 @@ td{
         display: inline-block;
         width: 100%;
         height: 100%;
-    }
-    .contenido__surfshop{
-        grid-area: surfshop;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 1000px;
-        width: auto;
-    }
-    .surfshop__imagen{
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-    }
-    .surfshop__formulario{
-        width: 100%;
-        height: 100%;
-        margin-right: 0px;
     }
 }

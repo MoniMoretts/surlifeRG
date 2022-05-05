@@ -13,15 +13,11 @@
     </head>
     <body>
         <main class="fondo__pagina">
-            <div class="">
         <!--Aca comienza el header-->
-        <header class=" row ">
-          <nav class="navbar navbar-expand-lg barraNavegacion">
+        <header class=" encabezado row ">
+          <nav class="encabezado__grande navbar navbar-expand-lg barraNavegacion">
           <div class="container-fluid">
                   <a class="encabezado__logo navbar-brand" href="../index.html"><img src="../images/surflifeLogo.webp" width="105"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="listaNav navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -37,7 +33,7 @@
                       <a id="titulo__Nav" class="nav-link active" aria-current="page" href="surfpoints.html">Surfpoints</a>
                     </li>
                     <li class="nav-item">
-                      <a id="titulo__Nav" class="nav-link active" aria-current="page" href="surfshop.html">Surfshop</a>
+                      <a id="titulo__Nav" class="nav-link active" aria-current="page" href="lifestyle.html">Lifestyle</a>
                     </li>
                     <li class="nav-item">
                       <a id="titulo__Nav" class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
@@ -46,6 +42,42 @@
               </div>
               <a class="encabezado__logo navbar-brand" href="../index.html"><img class="logo2" src="../images/surflifeLogo.webp" width="105"></a>
           </div>
+          </nav>
+          <nav class="encabezado__chico navbar navbar-light fixed-top">
+            <div class="container-fluid">
+              <a class="encabezado__logo navbar-brand" href="../index.html"><img src="../images/surflifeLogo.webp" width="105"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end colorCanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../images/surflifeLogo.webp" width="105"></a></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a id="textoCanvas" class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="textoCanvas" class="nav-link active" aria-current="page" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="textoCanvas" class="nav-link active" aria-current="page" href="clases.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="textoCanvas" class="nav-link active" aria-current="page" href="surfpoints.html">Surfpoints</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="textoCanvas" class="nav-link active" aria-current="page" href="lifestyle.html">lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="textoCanvas" class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </nav>
       </header>
         <!--Aca termina el header-->
@@ -58,36 +90,11 @@
             Acercate a la escuela ubicada en <a class="texto__link" href="https://www.google.com/maps/place/Mavericks+Beach/@37.4955678,-122.5141966,14z/data=!3m1!4b1!4m5!3m4!1s0x808f724bee999c59:0x81d5f0290fcc0248!8m2!3d37.4955696!4d-122.496687"src="comollegar">Mavericks Beach</a> y comenza a descubrir este increble estilo de vida.
         </p>
         <!--videos similares a los que habria en el sitio-->
-        
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <iframe class="videos d-block w-100"  src="https://www.youtube.com/embed/NOP8Wq4UYVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="carousel-item">
-              <iframe class="videos d-block w-100" src="https://www.youtube.com/embed/PkWjeqAN4cQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="carousel-item">
-              <iframe class="videos d-block w-100" src="https://www.youtube.com/embed/QCCPtc5Cicg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
          <!--Aca empieza el footer-->
          <footer class="pieDePagina">
+          <div class="pieDePagina__music">
+            <iframe class="music" src="https://open.spotify.com/embed/playlist/0Wt5wp07Rrq6qPa9m1qP9x?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
             <div class="pieDePagina__contacto">
                 <h2 class="contacto__leyenda"><a class="texto__link" id="link__footer" href="clases.html">Surflife surf school</a>
                     <h3 class="contacto__leyenda">Calle Falsa, 123</h3>
@@ -103,9 +110,9 @@
                 <a class="redes__logo" href="https://www.whatsapp.com/?lang=es"><img src="../images/whatsapp.png" title="whatsapp" width="40px"></a>
                 <a class="redes__logo" href="https://es-la.facebook.com/"><img src="../images/facebook.png" title="facebook" width="40px"></a>
             </div>
+            
         </footer>
          <!--fin del footer-->
-        </div>
         </main>
     </body>
 </html>

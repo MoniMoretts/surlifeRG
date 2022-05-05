@@ -15,8 +15,8 @@
         <main class="fondo__pagina">
             
         <!--Aca comienza el header-->
-        <header class=" row ">
-            <nav class="navbar navbar-expand-lg barraNavegacion">
+        <header class=" encabezado row ">
+            <nav class="encabezado__grande navbar navbar-expand-lg barraNavegacion">
             <div class="container-fluid">
                     <a class="encabezado__logo navbar-brand" href="../index.html"><img src="../images/surflifeLogo.webp" width="105"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -47,6 +47,42 @@
                 <a class="encabezado__logo navbar-brand" href="../index.html"><img class="logo2" src="../images/surflifeLogo.webp" width="105"></a>
             </div>
             </nav>
+            <nav class="encabezado__chico navbar navbar-light fixed-top">
+                <div class="container-fluid">
+                  <a class="encabezado__logo navbar-brand" href="../index.html"><img src="../images/surflifeLogo.webp" width="105"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end colorCanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../images/surflifeLogo.webp" width="105"></a></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a id="textoCanvas" class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="textoCanvas" class="nav-link active" aria-current="page" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="textoCanvas" class="nav-link active" aria-current="page" href="clases.html">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="textoCanvas" class="nav-link active" aria-current="page" href="surfpoints.html">Surfpoints</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="textoCanvas" class="nav-link active" aria-current="page" href="lifestyle.html">lifestyle</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="textoCanvas" class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
         <!--Aca termina el header-->
         <div class="surfpoints">
@@ -94,7 +130,11 @@
         </table>
             <div class="imagen__playa5"></div>
          <!--Aca empieza el footer-->
+         
          <footer class="pieDePagina">
+            <div class="pieDePagina__music">
+                <iframe class="music" src="https://open.spotify.com/embed/playlist/0Wt5wp07Rrq6qPa9m1qP9x?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              </div>
             <div class="pieDePagina__contacto">
                 <h2 class="contacto__leyenda"><a class="texto__link" id="link__footer" href="clases.html">Surflife surf school</a>
                     <h3 class="contacto__leyenda">Calle Falsa, 123</h3>
