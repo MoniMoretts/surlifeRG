@@ -1,7 +1,16 @@
 .card {
-  background-color: #214044;
-  opacity: 70%; }
+  background-color: #127883;
+  opacity: 90%; }
   .card .letra__formulario {
     color: white; }
   .card .letra__formulario2 {
     color: white; }
+
+.botonCard {
+  background-color: #fd4830;
+  border-radius: 7px;
+  color: white; }
+
+.botonCard:hover {
+  background-color: #fd6d2a;
+  color: #fcfbfa; }
