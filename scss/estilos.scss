@@ -17,3 +17,15 @@
     background-color: #fd6d2a;
     color: #fcfbfa;
 }
+@each $fondo in celeste, naranja{
+    .celeste{$fondo}{
+        background-color: celeste {$fondo}
+    }
+}
+.celeste{
+    background-color: #57a8b3;
+}
+.naranja{
+    background-color: #fd4830;
+}
+
