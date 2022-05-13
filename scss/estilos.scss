@@ -1,31 +1,81 @@
-.card{
-    background-color: #127883;
-    opacity: 90%;
-    .letra__formulario{
-        color: white;
+//VARIABLES
+//PALETA DE COLORES
+$naranja: #fd4830;
+$naranjaClaro: #fd6d2a;
+$celeste: #57a8b3;
+$celesteOscuro: #127883;
+$celesteOscuro2: #0f5c64;
+$celesteOscuro3: #0d4f57;
+$blanco: #ffffff;
+$negro: #000000;
+$verde: #0ea074;
+
+//MAPS
+$card:(evento1:$celesteOscuro,evento2:$celesteOscuro2,evento3:$celesteOscuro3);
+@each $evento, $color in $card{
+    .fondo--#{$evento}{
+        background-color:$color;
     }
-    .letra__formulario2{
-        color: white;
+}
+//MAP-GET
+$estilos:(
+    color:$blanco,
+    fuente1:40px,
+    fuente2:25px,
+    fuente3:20px,
+    fuente4:18px,
+    transparencia: 90%
+);
+.card{
+    opacity: map-get($map: $estilos, $key: transparencia );
+    .letra__card{
+        color: map-get($map: $estilos, $key: color );
+        font-size: map-get($map: $estilos, $key: fuente2);
+    }
+    .letra__card2{
+        color: map-get($map: $estilos, $key: color);
+        font-size: map-get($map: $estilos, $key: fuente4);
     }
 }
 .botonCard{
-    background-color: #fd4830;
+    background-color: $naranja;
     border-radius: 7px;
     color: white;
 }
 .botonCard:hover{
-    background-color: #fd6d2a;
+    background-color: $naranjaClaro;
     color: #fcfbfa;
 }
-@each $fondo in celeste, naranja{
-    .celeste{$fondo}{
-        background-color: celeste {$fondo}
-    }
+.boton{
+    border-style: none;
+    border-radius: 20px;
+    width: 100px;
 }
-.celeste{
-    background-color: #57a8b3;
+//EXTENDS
+%bg-drop{
+    border-radius: 100px;
+    filter: drop-shadow(5px 2px 9px $negro);
 }
-.naranja{
-    background-color: #fd4830;
+.boton--enviar{
+    @extend .boton;
+    background-color: $celesteOscuro3;
 }
-
+.boton--enviar:hover{
+    background-color: $verde;
+}
+.boton--limpiar{
+    @extend .boton;
+    background-color: $celesteOscuro3
+}
+.boton--limpiar:hover{
+    background-color: $naranjaClaro;
+}
+//MIXINS
+@mixin flex-row-evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.formulario__boton{
+    @include flex-row-evenly;
+}

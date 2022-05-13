@@ -1,10 +1,20 @@
+.fondo--evento1 {
+  background-color: #127883; }
+
+.fondo--evento2 {
+  background-color: #0f5c64; }
+
+.fondo--evento3 {
+  background-color: #0d4f57; }
+
 .card {
-  background-color: #127883;
   opacity: 90%; }
-  .card .letra__formulario {
-    color: white; }
-  .card .letra__formulario2 {
-    color: white; }
+  .card .letra__card {
+    color: #ffffff;
+    font-size: 25px; }
+  .card .letra__card2 {
+    color: #ffffff;
+    font-size: 18px; }
 
 .botonCard {
   background-color: #fd4830;
@@ -14,3 +24,25 @@
 .botonCard:hover {
   background-color: #fd6d2a;
   color: #fcfbfa; }
+
+.boton, .boton--enviar, .boton--limpiar {
+  border-style: none;
+  border-radius: 20px;
+  width: 100px; }
+
+.boton--enviar {
+  background-color: #0d4f57; }
+
+.boton--enviar:hover {
+  background-color: #0ea074; }
+
+.boton--limpiar {
+  background-color: #0d4f57; }
+
+.boton--limpiar:hover {
+  background-color: #fd6d2a; }
+
+.formulario__boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
